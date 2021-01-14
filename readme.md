@@ -53,7 +53,7 @@ kill -9 <the id number>
  * Rename your server to be called "YourFirstName-Server" in Digital Ocean
  * Please take a screen shot of this page - and keep it aside.
 * Login to the server using ssh
- * Login to the server using root
+ * Login to the server using root : `ssh  root@your.ip.address`
  
  * Server setup:
 
