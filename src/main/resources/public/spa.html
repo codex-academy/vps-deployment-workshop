@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greet me</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js" integrity="sha256-XmdRbTre/3RulhYk/cOBUMpYlaAp2Rpo/s556u0OIKk=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Greetings - Single Page App</h1>
+        <div class="app">
+
+            <div>
+                <input type="text" v-model="firstName" >
+            </div>
+
+            <div>
+                <div class="language">
+                    <div>
+                        <input type="radio" name="language" v-model="language" value="afr">Afrikaans
+                    </div>
+                    <div>
+                        <input type="radio" name="language" v-model="language" value="eng">English
+                    </div>
+                    <div>
+                        <input type="radio" name="language" v-model="language" value="xhosa">Xhosa
+                    </div>
+                </div>
+            </div>
+
+            <div class="counter">
+                {{counter}}
+            </div>
+
+            <h3 >
+                {{message}}
+            </h3>
+
+            <input type="button" v-on:click="greet" value="Greet!" v-if="firstName.length > 1 && language.length > 0 " >
+            <input type="button" v-on:click="showGreeted" value="Show greeted" v-if="!showGreetedList" >
+            <input type="button" v-on:click="hideGreeted" value="Hide greeted" v-if="showGreetedList" >
+
+            <table v-if="showGreetedList" >
+                <tr>
+                    <th>First name</th>
+                    <th>Counter</th>
+                </tr>
+                <tr v-for="person in greetedPeople" >
+                    <td>{{person.firstName}}</td>
+                    <td>{{person.counter}}</td>
+                </tr>
+            </table>
+
+
+        </div>
+    </div>
+
+</body>
+</html>

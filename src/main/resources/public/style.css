@@ -1,0 +1,40 @@
+body {
+    background-color: SteelBlue;
+    color: white;
+    font-family: sans-serif;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+}
+
+.counter {
+    margin: 1em;
+    font-size: 300%;
+    text-align: center;
+}
+
+.error {
+    color: orange;
+}
+
+input[type="text"] {
+    padding: 0.5em;
+    font-size: 125%;
+}
+
+input[type="submit"], input[type="button"] {
+    padding: 1em;
+    background-color: orange;
+}
+
+.language {
+    padding: 1em;
+}

@@ -1,0 +1,23 @@
+{{#partial "body"}}
+    <h1>User  counter</h1>
+    <div class="error">
+        {{error}}
+    </div>
+    <div>
+        The  value of {{username}}'s counter is {{counter}}.
+
+        <form action="/increment" method="post">
+            <input type="submit" value="increment">
+        </form>
+
+        <form action="/decrement" method="post">
+            <input type="submit" value="decrement">
+        </form>
+    </div>
+
+    <div>
+        <a href="/logout">Logout</a>
+    </div>
+{{/partial}}
+
+{{> layout.hbs }}
