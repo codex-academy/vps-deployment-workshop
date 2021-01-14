@@ -127,7 +127,7 @@ public class App {
 
                 String username = req.queryParams("username");
 
-                if (username == null) {
+                if (username == null || "".equals(username)) {
                     res.redirect("/login");
                 } else {
                     res.cookie("username", username);
