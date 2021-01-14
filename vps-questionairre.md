@@ -2,7 +2,7 @@
 
 * What is a VPS?
 
-* What does application deployment mean?
+* What does it mean to deploy a web application?
 
 * Describe the high level process of deploying a Java Web App to a VPS
 
@@ -19,9 +19,11 @@
 
 * What did you use an IP address for during this workshop?
 
-*  What is a domain name? And how did you use it during this workshop?
+* What was the IP addres of your server?
 
-* List 3 things that you learned during this workshop.
+* What is a domain name? How did you use it during this workshop?
+
+* List at least 3 things that you learned during this workshop.
 
 * What did you enjoy the most about this workshop?
 
