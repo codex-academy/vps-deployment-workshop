@@ -26,7 +26,8 @@ mvn dependency:copy-dependencies
 java -cp .:target/* vps.app.App
 ```
 
-See if you can access the application from the browser.
+See if you can access the application from the browser at `http://localhost:4567`
+
 
 ### Start the app in the background using this command:
 
