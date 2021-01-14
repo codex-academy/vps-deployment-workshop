@@ -71,5 +71,12 @@ kill -9 <the id number>
     ```
     nohup java -cp .:target/* vps.app.App > vps.log 2>&1 &
     ```
+    
+    You can also see this command to the the process id for the app:
+    
+    ```
+    ps -eafw | grep vps.app.App
+    ```
+    
   * now you can logout of your server using the `logout` command.
   
