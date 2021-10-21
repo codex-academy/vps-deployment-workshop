@@ -62,7 +62,7 @@ kill -9 <the id number>
         * using `apt install default-jdk` - it might take a while to complete
         * after running the command the `java` will be available on your server.
     * install `git` on the server using: `apt install git` - **note** git was installed on my server by default.
-    * install maven: `apt install mvn`
+    * install maven: `apt install maven`
 
 * Link the server to a domain name
     * Email the IP address of your server to `mentors@projectcodex.co`
